@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>IPL</title>
+  <meta name="IPL"
+    content="Info on IPL." />
+
+  <!-- Load favicon -->
+  <link rel="shortcut icon" type="image/png" href="{% static 'img/logo.jpg' %}" />
+
+  <!-- CSS Files -->
+  <!-- For header and footer-->
+  <link rel="preload" as="style" href="{% static 'css/style.css' %}" onload="this.rel = 'stylesheet'" />
+  <!-- Page Specific CSS Files -->
+  {% if css_file == "home" %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style_home.css' %}" />
+  {% endif %}
+</head>
+
+<body>
+  <!--Header content-->
+  {% include 'partials/_header.html' %}
+
+  <main>{% block content %} {% endblock %}</main>
+
+  <!--Footer content-->
+  {% include 'partials/_footer.html' %}
+</body>
+
+</html>

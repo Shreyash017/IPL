@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="topic">
+    <h1>IPL Assignment</h1>
+</section>
+
+<section class="plots">
+    {% autoescape off %}
+        {{ plot_div1 }}
+    {% endautoescape %}
+</section>
+
+<section class="plots">
+    {% autoescape off %}
+        {{ plot_div2 }}
+    {% endautoescape %}
+</section>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+/* Universal */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* For Header */
+.header-container {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.website-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.website-name a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 20px;
+    text-align: end;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul a {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+
+/* For Footer */
+.footer-container {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: 20px;
+    background: black;
+}
+
+.item {
+    margin-top: 0px;
+    align-items: center;
+    position: relative;
+    color: #FFF;
+    font-weight: 800;
+    font-style: italic;
+    align-self: start;
+}
